@@ -1,1 +1,115 @@
 \section{Light}
+\textbf{Light} is a form of energy that consists of oscillating \emph{electric} and \emph{magnetic}
+fields, perpendicular to each other.
+
+\begin{tabularx}{\linewidth}{|l|X|l|} \hline
+    \multicolumn{3}{|c|}{$c = \lambda \nu$} \\ \hline
+    & \textbf{value} & \textbf{unit} \\ \hline
+    $c$ & speed of light $= 2.9979 \times 10^8$ & m/s \\ \hdashline
+    $\lambda$ & wavelength & m \\
+    $\nu$ & frequency & $s^{-1}$ or Hz \\ \hline
+\end{tabularx}
+
+\subsection{Wave-particle Duality of Light}
+
+Due to the wave nature of light, light waves that are \textit{in phase} undergo 
+\textbf{constructive interference}.
+
+Light waves that are \textit{out of phase} undergo \textbf{destructive interference} 
+--- cancelling out each other.
+
+Due to the particle nature of light, when an object is heated, 
+it emits electromagnetic radiation known as \textbf{blackbody radiation}.
+
+The wavelength of light emitted changes as the temperature of the object increases.
+
+\begin{tabularx}{\linewidth}{|l|X|l|} \hline
+    \multicolumn{3}{|c|}{$E = h \nu$} \\ \hline
+    & \textbf{value} & \textbf{unit} \\ \hline
+    $E$ & energy & J \\ \hdashline
+    $h$ & Planck's constant $= 6.626 \times 10^{-34}$& J/s \\
+    $\nu$ & frequency & $s^{-1}$ or Hz \\ \hline
+\end{tabularx}
+
+Putting the two equations above together, we can interconvert between \textit{energy}, 
+\textit{frequency}, and \textit{wavelength}.
+
+\begin{tabularx}{\linewidth}{|l|X|l|} \hline
+    \multicolumn{3}{|c|}{$E = \frac{hc}{\lambda}$} \\ \hline
+    & \textbf{value} & \textbf{unit} \\ \hline
+    $E$ & energy & J \\ \hdashline
+    $h$ & Planck's constant $= 6.626 \times 10^{-34}$& J/s \\
+    $c$ & speed of light $= 2.9979 \times 10^8$ & m/s \\
+    $\lambda$ & wavelength & m \\ \hline
+\end{tabularx}
+
+\subsection{Photoelectric Effect}
+Electrons can only be ejected from a surface if incoming \textbf{photons} transfer
+sufficient energy to the atoms on the metal surface.
+
+\textbf{Electron-volt} (eV) is the amount of \textit{kinetic energy} gained by a single
+electron accelerating from rest though an electric potential difference of 1 volt in vacuum.
+
+\begin{tabularx}{\linewidth}{|Y|} \hline
+    $1 \; \si{\electronvolt} = 1.602 \times 10^{-19}$ \si{\joule} \\ \hline
+\end{tabularx}
+
+\begin{tabularx}{\linewidth}{|l|X|l|} \hline
+    \multicolumn{3}{|c|}{$h \nu = \Phi + \text{KE}_{\text{max}}$} \\ \hline
+    & \textbf{value} & \textbf{unit} \\ \hline
+    $h$ & Planck's constant \par $= 6.626 \times 10^{-34}$& J/s \\
+    $\nu$ & frequency & $s^{-1}$ or Hz \\ \hdashline
+    $\Phi$ & work function of the metal & eV \\
+    $\text{KE}_{\text{max}}$ & maximum kinetic energy of the ejected electron & eV \\ \hline
+\end{tabularx}
+
+Note that $\text{KE}_{\text{max}}$ \textit{cannot be negative}, so its minimum value is 0.
+
+\subsection{Solar Spectrum}
+The \textbf{electromagnetic spectrum} comprises of, in increasing energy:
+\begin{enumerate}
+    \item radio waves,
+    \item microwaves,
+    \item infrared,
+    \item visible,
+    \item ultraviolet,
+    \item X-rays,
+    \item gamma ($\gamma$) rays,
+\end{enumerate}
+
+White light disperses into a continuous spectrum in the visible spectrum.
+
+However, sunlight is \emph{not continuous} --- there are \emph{dark lines} in
+the \textbf{solar spectrum} due to the composition of the sun and the Earth's atmosphere.
+
+\subsubsection{Aside: Spectroscopy}
+
+\emph{The study of the interaction of \emph{electromagnetic radiation}
+with \emph{matter} to obtain information about the identity and structure of substances.}
+
+\textbf{Absorption spectroscopy} reveals that a colored object reflects light of that color
+and absorbs light of the \textit{opposite color}.
+
+\subsubsection{Emission Spectrums}
+Energy can excite electrons of atoms from their \textbf{ground state} to an \textbf{excited state}.
+
+In the excited state, electrons have higher energy, and when electrons are relaxed to their
+ground state, their energy is released as light.
+
+Therefore, the dark lines in the solar spectrum occur due to the absorption of energy
+by the atoms in the sun's atmosphere.
+
+\subsubsection{Rydberg Formula}
+\emph{Used to calculate the wavelengths of a spectral line in many chemical elements.}
+
+It generalizes the Balmer series ($n = 2$) for the visible region, the Lyman series ($n = 1$)
+for the UV region, and the Paschen series ($n = 3$) for the IR region.
+
+\begin{tabularx}{\linewidth}{|l|X|l|} \hline
+    \multicolumn{3}{|c|}{$\frac{1}{\lambda} = R_H \left( \frac{1}{{n_1}^2} - \frac{1}{{n_2}^2} \right)$} \\ \hline
+    & \textbf{value} & \textbf{unit} \\ \hline
+    $\lambda$ & wavelength of light emitted & m \\ \hdashline
+    $R_H$ & Rydberg constant $= 1.096776 \times 10^7$ & $\si{\per\metre}$ \\
+    $n_1$ & final electron state (lower energy) $< n_2$ & \code{int} \\
+    $n_2$ & initial electron state (higher energy) & \code{int} \\ \hline
+\end{tabularx}

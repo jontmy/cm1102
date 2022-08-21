@@ -1,0 +1,54 @@
+\section{Energy Levels}
+
+In the Bohr model, electrons are allowed only in certain circular orbits around the nucleus,
+which give rise to the \textbf{principal quantum numbers} of $n$.
+
+Therefore, the energy levels in atomic structures are \emph{quantized},
+and the energy levels associated with each electron orbit has a fixed value,
+hence the term \textbf{quantized energy level}.
+
+\begin{tabularx}{\linewidth}{|l|X|l|} \hline
+    \multicolumn{3}{|c|}{$E_n = -\frac{2 \pi^2 m_e e^4}{n^2 h^2}$} \\ \hline
+    & \textbf{value} & \textbf{unit} \\ \hline
+    $E_n$ & energy level & J \\ \hdashline
+    $m_e$ & electron mass $= 9.1094 \times 10^{-31}$ & \si{\kilo\gram} \\
+    $e$ & electron charge $= 1.602 \times 10^{-19}$& \si{\coulomb} \\
+    $n$ & principal quantum number & \code{int} \\
+    $h$ & Planck's constant $= 6.626 \times 10^{-34}$& \si{\joule \cdot \sec} \\ \hline
+\end{tabularx}
+
+Since the only variable is $n$, the equation is generalizable:
+
+\begin{tabularx}{\linewidth}{|Y|} \hline
+    $E_n \approxeq -2.18 \times 10^{-18} \left( \frac{1}{n^2} \right)$ \si{\joule} \\ \hline
+    $E_n \approxeq -13.6 \left( \frac{1}{n^2} \right)$ \si{\electronvolt} \\ \hline
+\end{tabularx}
+
+The \textbf{ground state} of electrons, $n = 1$, has the lowest energy level and the most stable.
+
+The \textbf{excited states} have values of $n > 1$.
+
+The energy required to excite an electron from the ground state to an excited state 
+$\Delta E = E_{\text{final}} - E_{\text{initial}}$ can be determined using the $E_n$ formula above.
+
+If $\Delta E > 0$, this is known as an \textbf{absorption} (or excitation) process,
+going from a lower energy state to a higher energy state.
+
+Conversely, if $\Delta E < 0$, this is known as an \textbf{emission} (or relaxation) process,
+going from a higher energy state to a lower energy state, which releases energy.
+
+The \textbf{ionization continuum} occurs as $n \rightarrow \infty, E_n \rightarrow 0$,
+such that energy levels are no longer quantized.
+
+The \textbf{ionization energy} is the minimum energy required to remove one electron from
+a gaseous atom or molecule.
+
+In the case of hydrogen, $\Delta E = E_\infty - E_1 = + 13.6 \si{\electronvolt}$.
+
+However, this only applies to 1-electron systems, as we otherwise need to account for
+electron-electron repulsion, which requires taking into account the nuclear charge, $Z^2$:
+
+\begin{tabularx}{\linewidth}{|Y|} \hline
+    $E_n \approxeq -2.18 \times 10^{-18} \left( \frac{Z^2}{n^2} \right)$ \si{\joule} \\ \hline
+    $E_n \approxeq -13.6 \left( \frac{Z^2}{n^2} \right)$ \si{\electronvolt} \\ \hline
+\end{tabularx}
