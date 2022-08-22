@@ -26,10 +26,16 @@
 \definecolor{background}{HTML}{FFFFFF}
 
 % Better tables
-\usepackage{tabularx} % fit columns to width with \tabularx{\linewidth}{X}
+\usepackage{tabularx} % deprecated - use tabularrray instead - fit columns to width with \tabularx{\linewidth}{X}
 \renewcommand{\arraystretch}{1.25}
 \usepackage{arydshln} % dashed lines in tables
 \newcolumntype{Y}{>{\centering\arraybackslash}X} % centered tabularx X columns with Y
+\usepackage{tabularray} % modern table typesetting, superseding tabularx
+
+% Better fonts
+\usepackage{arev}
+\usepackage[sfdefault]{inter}
+\usepackage[T1]{fontenc}
 
 % Better code formatting
 \usepackage{listings}
@@ -54,7 +60,7 @@
 \graphicspath{ {./images/} }
 
 \usepackage{geometry}
-\geometry{a4paper, portrait, margin=0.5in, top=0.71in}
+\geometry{a4paper, portrait, margin=0.4in, top=0.7in}
 
 \usepackage{fancyhdr}
 \pagestyle{fancy}
