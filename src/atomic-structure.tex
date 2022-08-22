@@ -71,13 +71,13 @@ Therefore, within shells of the same quantum number, orbital energy increases as
  the $2s$ orbital has 1 radial node, while the $2p$ orbital has none.
 
  \subsubsection{Quantum Numbers}
- \begin{tabularx}{\linewidth}{|l|X|X|} \hline
-    \multicolumn{3}{|c|}{$nl_{m_l}$, e.g. $2p_z$} \\ \hline
+ \begin{tblr}{|l|X|X|} \hline
+    \SetCell[c=3]{c} $nl_{m_l}$, e.g. $2p_z$ \\ \hline
     & \textbf{value} & \textbf{range} \\ \hline
-    $n$ & \textbf{principal} QN & 1, 2, 3, \dots \\
-    $l$ & \textbf{magnetic} QN & 0, 1, \dots, $n-1$ \\
-    $m_l$ & \textbf{orbital angular momentum} QN & $-l, \dots, 0, \dots, +l$ \\ \hline
-\end{tabularx}
+    $n$ & principal QN & 1, 2, 3, \dots \\
+    $l$ & magnetic QN & 0, 1, \dots, $n-1$ \\
+    $m_l$ & {orbital angular \\ momentum QN} & $-l, \dots, 0, \dots, +l$ \\ \hline
+\end{tblr}
 
 The principal QN relates to the \textit{size} and \textit{energy} of the orbital --- higher principal QNs
 have larger orbitals with higher energy levels.
@@ -90,3 +90,33 @@ The orbital angular momentum QN relates to the \textit{orientation} of the orbit
     number of angular nodes & $l$ \\ \hline
     number of radial nodes & $n - l - 1$ \\ \hline
 \end{tabularx}
+
+\subsection{Electronic Configuration}
+\textbf{Pauli's exclusion principle}: No two electrons in a given atom can have the exact
+same set of quantum numbers ($n$, $l$, $m_l$, $m_s$).
+
+\textbf{Aufbau principle}: Electrons are always placed in the lowest energy sublevel available.
+
+\textbf{Hund's rule}: Degenerate orbitals are always filled with single electrons before any of them
+are doubly occupied, and electrons fill separate orbitals with their spins aligned.
+
+\subsection{Trends in Atomic Properties}
+\begin{tblr}{|l|X|X|} \hline
+    \textbf{trend} & $\rightarrow$ \textbf{period} & $\downarrow$ \textbf{group} \\ \hline
+    atomic radius & decreases & increases \\ \hline[dashed]
+    ionization energy & increases & decreases \\ \hline[dashed]
+    electron affinity & increases & decreases \\ \hline
+\end{tblr}
+
+\textbf{Atomic radius} is affected by the \textbf{effective nuclear charge} ($Z_{\text{eff}}$) of the atom.
+
+\begin{tblr}{|l|X|l|} \hline
+    \SetCell[c=3]{c} $Z_{\text{eff}} = Z - S$ \\ \hline
+    & \textbf{value} & \textbf{unit} \\ \hline
+    Z & nuclear charge (atomic number) & \code{int} \\ 
+    S & shielding constant & \code{real} \\ \hline
+\end{tblr}
+
+\textbf{Ionization energy} is the energy required to remove an electron from a gaseous atom or ion.
+
+\textbf{Electron affinity} is the energy released when an electron is added to a gaseous atom to form an anion.
