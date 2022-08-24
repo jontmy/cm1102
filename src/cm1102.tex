@@ -144,6 +144,10 @@
 \color{body}
 \pagecolor{background}
 \begin{document}
+    % speed up LaTeX compilation, disable for release
+    \pdfcompresslevel=0
+    \pdfobjcompresslevel=0
+    
     \pagenumbering{gobble} % remove page numbering for content pages
     \maketitle
     \pageline{1.5pt}
@@ -159,5 +163,7 @@
         \input{light.tex}
         \input{energy-levels.tex}
         \input{atomic-structure.tex}
+        \input{molecular-structure.tex}
     \end{multicols*}
+    \input{vsepr.tex}
 \end{document}
