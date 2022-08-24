@@ -22,7 +22,7 @@
 
 % Custom named colors
 \usepackage[dvipsnames]{xcolor}
-\definecolor{body}{HTML}{494949}
+\definecolor{body}{HTML}{555555}
 \definecolor{background}{HTML}{FFFFFF}
 
 % Better tables
@@ -119,12 +119,27 @@
 % Drawing trees
 \usepackage[linguistics]{forest}
 
+% Drawing electronic configuration diagrams
+% https://tex.stackexchange.com/questions/372581/atomic-electronic-configuration-with-small-boxes
+\newcommand*\up{\fbox{$\mathord\upharpoonleft\phantom{\downharpoonright}$}}%
+\newcommand*\dwn{\fbox{$\mathord\downharpoonleft\phantom{\upharpoonright}$}}%
+\newcommand*\updwn{\fbox{$\upharpoonleft\downharpoonright$}}%
+\newcommand*\emp{\fbox{$\phantom{\downharpoonright}\phantom{\downharpoonright}$}}%
+\newcommand{\electron}[2]{{%
+        \setlength\tabcolsep{0pt}% remove extra horizontal space from tabular
+%       \setlength\fboxrule{0.2pt}% uncomment for original line width
+        \begin{tabular}{c}
+            \fboxsep=0pt\fbox{\fboxsep=3pt#2}\\[2pt]
+            #1
+        \end{tabular}%
+}}
+
 \title{\vspace{-1cm}\textbf{CM1102 \\[0.25em] Chemistry -- The Central Science} \\[2em] \Large AY2022/23 Semester 1 \\[1em]}
 \author{Notes by Jonathan Tay}
 \date{Last updated on \today}
 
 \color{body}
-\pagecolor{background} % remove this before printing!
+\pagecolor{background}
 \begin{document}
     \pagenumbering{gobble} % remove page numbering for content pages
     \maketitle

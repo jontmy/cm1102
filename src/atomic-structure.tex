@@ -76,7 +76,8 @@ Therefore, within shells of the same quantum number, orbital energy increases as
     & \textbf{value} & \textbf{range} \\ \hline
     $n$ & principal QN & 1, 2, 3, \dots \\
     $l$ & magnetic QN & 0, 1, \dots, $n-1$ \\
-    $m_l$ & {orbital angular \\ momentum QN} & $-l, \dots, 0, \dots, +l$ \\ \hline
+    $m_l$ & {orbital angular \\ momentum QN} & $-l, \dots, 0, \dots, +l$ \\
+    $m_s$ & electron spin QN & $-\frac{1}{2}, +\frac{1}{2}$ \\ \hline
 \end{tblr}
 
 The principal QN relates to the \textit{size} and \textit{energy} of the orbital --- higher principal QNs
@@ -89,16 +90,31 @@ The orbital angular momentum QN relates to the \textit{orientation} of the orbit
 \begin{tabularx}{\linewidth}{|Y|c|} \hline
     number of angular nodes & $l$ \\ \hline
     number of radial nodes & $n - l - 1$ \\ \hline
+    number of orbitals & $2l + 1$ \\ \hline
 \end{tabularx}
 
 \subsection{Electronic Configuration}
 \textbf{Pauli's exclusion principle}: No two electrons in a given atom can have the exact
 same set of quantum numbers ($n$, $l$, $m_l$, $m_s$).
 
+$\implies$ An atomic orbital has a maximum of 2 electrons of \textit{opposite} spins.
+
 \textbf{Aufbau principle}: Electrons are always placed in the lowest energy sublevel available.
 
-\textbf{Hund's rule}: Degenerate orbitals are always filled with single electrons before any of them
-are doubly occupied, and electrons fill separate orbitals with their spins aligned.
+$\implies$ Fill orbitals starting with the \textit{lowest} energy to get the \textit{ground state}.
+
+\textbf{Hund's rule}: \textit{Degenerate} orbitals are always filled with single electrons before any of them
+are doubly occupied, and electrons fill separate orbitals with their \textit{spins aligned}.
+
+$\implies$ Spin-aligned electrons have lower interelectronic repulsion, so the system has less energy.
+
+\subsubsection{Exceptions: Cr, Cu}
+These elements have a lower energy level in these configurations than would typically be expected:
+
+\begin{tblr}{lX}
+    Cr & \electron{4s}{\up}\quad \electron{3d}{\up\up\up\up\up} \\
+    Cu & \electron{4s}{\up}\quad \electron{3d}{\updwn\updwn\updwn\updwn\updwn} \\
+\end{tblr}
 
 \subsection{Trends in Atomic Properties}
 \begin{tblr}{|l|X|X|} \hline
@@ -109,6 +125,12 @@ are doubly occupied, and electrons fill separate orbitals with their spins align
 \end{tblr}
 
 \textbf{Atomic radius} is affected by the \textbf{effective nuclear charge} ($Z_{\text{eff}}$) of the atom.
+
+Interelectronic repulsion decreases effective nuclear charge through the \textbf{shielding effect}
+and \textbf{penetration}.
+
+Electrons in the inner energy levels have a greater shielding effect than electrons of the
+same energy level --- 2s electrons shield 2p electrons more than other 2p electrons.
 
 \begin{tblr}{|l|X|l|} \hline
     \SetCell[c=3]{c} $Z_{\text{eff}} = Z - S$ \\ \hline
