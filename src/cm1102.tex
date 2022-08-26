@@ -27,8 +27,8 @@
 % https://tex.stackexchange.com/questions/32100/what-does-each-ams-package-do
 \usepackage{amssymb}
 \usepackage[fleqn]{amsmath}
-\usepackage{cancel} % cancelling symbols
-\usepackage{bm} % bold and italicize math
+% \usepackage{cancel} % cancelling symbols - unused
+% \usepackage{bm} % bold and italicize math - unused
 \usepackage{siunitx} % SI units with \si{...}
 
 % Font packages
@@ -45,14 +45,15 @@
 % Image & graphics packages
 \usepackage{graphicx}
 \graphicspath{ {./images/} }
-\usepackage[linguistics]{forest}
+% \usepackage[linguistics]{forest} % unused (no trees)
 \usepackage{mhchem} % chemical formulae & equations
 
 % Better enumerate/itemize environment
 \usepackage{enumerate}
 \usepackage{enumitem} % all list modifications - remove enumerate spacing with [leftmargin=*]
 \setlist{nolistsep} % remove spacing in and around lists
-\setlist[itemize]{leftmargin=*} % remove natural first level indent
+\setlist[itemize]{leftmargin=*, itemsep=0.15em} % remove natural first level indent and customize spacing
+\setlist[enumerate]{leftmargin=*, itemsep=0.15em} % remove natural first level indent and customize spacing
 \renewcommand{\labelitemi}{\textsc{--}} % change first level bullet to --
 \renewcommand{\labelenumii}{\theenumii} % change enumerate numbering to arabic
 \renewcommand{\theenumii}{\theenumi.\arabic{enumii}.}
